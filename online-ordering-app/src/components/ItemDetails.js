@@ -3,8 +3,11 @@ import { useParams } from "react-router-dom";
 import items from "../data/items.json";
 import { CartContext } from "../context/CartContext";
 import "./ItemDetails.css";
+import { useNavigate } from 'react-router-dom';
+
 
 const ItemDetail = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const { addItemToCart } = useContext(CartContext);
   const item = items.find((item) => item.id === id);
@@ -20,7 +23,7 @@ const ItemDetail = () => {
       <img src={item.imageUrl} alt={item.name} />
       <p className="description">{item.description}</p>
       <p className="price">{item.price / 100}$</p>
-      <button onClick={() => addItemToCart({ ...item, quantity: 1 })}>
+      <button onClick={() => { addItemToCart({ ...item, quantity: 1 }); navigate('/cart'); }}>
         Add to Cart
       </button>
     </div>
