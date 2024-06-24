@@ -1,0 +1,104 @@
+.ItemList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0rem 1rem 1rem;
+}
+
+img {
+  width: 100%;
+}
+h2 {
+  padding-left: 1rem;;
+}
+
+.item {
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+  padding: 10px;
+  flex-grow: 0;
+
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px #00000073;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popup ul li {
+  margin-bottom: 10px;
+}
+
+.popup button {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.btn-1 {
+  background-color: blue;
+}
+.btn-2 {
+  background-color: red;
+}
+.btn-3 {
+  background-color: orange;
+}
+.order-complete {
+  padding: 1rem;
+}
+
+.order-complete button {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.emptyCartMessage{
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: red;
+  display: inline-block;
+  border-radius: 10px;
+}
