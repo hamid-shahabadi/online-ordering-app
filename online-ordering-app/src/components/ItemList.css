@@ -16,14 +16,6 @@
   box-shadow: 0px 0px 5px #00000073;
 }
 
-@media (max-width: 600px) {
-  .item {
-    flex: 1 1 100%;
-  }
-  .ItemList {
-    padding: 1rem;
-  }
-}
 
 .link {
   padding: 10px 20px;
@@ -45,4 +37,15 @@
 
 p {
   margin: 0;
+}
+
+
+@media (max-width: 600px) {
+ 
+  .ItemList {
+    flex-direction: column;
+    padding-right: 1rem !important;
+  }
+
+
 }
